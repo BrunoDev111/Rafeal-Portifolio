@@ -45,7 +45,7 @@ export default {
   data() {
     return {
       linkedinUrl: 'https://www.linkedin.com/in/rafael-rezende-de-oliveira-9523a4196/',
-      email: 'rafael.rezende@email.com' // ⬅️ TROCAR pelo email real
+      email: 'rafaelrez99@gmail.com' // ⬅️ TROCAR pelo email real
     }
   }
 }
