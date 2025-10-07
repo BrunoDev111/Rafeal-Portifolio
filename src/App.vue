@@ -1,15 +1,19 @@
 <template>
+  <BackgroundAnimated/>
   <Navbar />
-  
+  <RouterView />
 </template>
 
 <script>
+import BackgroundAnimated from './components/layout/BackgroundAnimated.vue';
 import Navbar from './components/layout/Navbar.vue'
+import { RouterView } from 'vue-router'
+
 
 export default {
   name: 'App',
   components: {
-    Navbar
+    Navbar, RouterView, BackgroundAnimated
   }
 }
 </script>
@@ -26,4 +30,8 @@ body {
   background: #000;
   color: #fff;
 }
+#app {
+  margin-top: 100px; /* ajuste o valor para a altura do seu navbar */
+}
+
 </style>

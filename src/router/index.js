@@ -1,3 +1,4 @@
+// src/router/index.js
 import { createRouter, createWebHistory } from 'vue-router'
 
 const router = createRouter({
@@ -6,9 +7,35 @@ const router = createRouter({
     {
       path: '/',
       name: 'home',
-      component: () => import('../App.vue') // Mudei para App.vue temporariamente
+      component: () => import('../views/HomeView.vue')
+    },
+    {
+      path: '/sobre',
+      name: 'sobre',
+      component: () => import('../views/SobreView.vue')
+    },
+    {
+      path: '/experiencia',
+      name: 'experiencia',
+      component: () => import('../views/ExperienciaView.vue')
+    },
+    {
+      path: '/skills',
+      name: 'skills',
+      component: () => import('../views/SkillsView.vue')
+    },
+    {
+      path: '/certificacoes',
+      name: 'certificacoes',
+      component: () => import('../views/CertificacoesView.vue')
+    },
+    {
+      path: '/contato',
+      name: 'contato',
+      component: () => import('../views/ContatoView.vue')
     }
-  ],
-})
+  ]
+  })
+
 
 export default router
